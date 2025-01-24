@@ -20,12 +20,11 @@ function MapGen_Tchekor()
     }
     
     map_gen_setting.autoplace_controls = {
-        ["tchekor-scrap"] = {frequency = 1, size = 1, richness = 1},
-        ["enemy-base"] = { frequency = 3, size = 1.2, richness = 1},
-        ["fulgora_islands"] = {},
+        ["enemy-base"] = { frequency = 10, size = 1.2, richness = 1},
+        ["fulgora_islands"] = {frequency = 1.75, size = 1.5, richness = 1.5},
         ["fulgora_cliff"] = {},
-        ["vulcanus_volcanism"] = {},
-        ["sulfuric_acid_geyser"] = {},
+        ["vulcanus_volcanism"] = {frequency = 0.5, size = 0.5, richness = 0.5},
+        ["sulfuric_acid_geyser"] = {frequency = 1.25, size = 1.2, richness = 1.25},
     }
 
     map_gen_setting.territory_settings = {
@@ -75,12 +74,12 @@ function MapGen_Tchekor()
 
           ["oil-ocean-shallow"] = {},
           ["oil-ocean-deep"] = {},
-          ["fulgoran-rock"] = {},
-          ["fulgoran-dust"] = {},
-          ["fulgoran-sand"] = {},
-          ["fulgoran-dunes"] = {},
-          ["fulgoran-walls"] = {},
-          ["fulgoran-paving"] = {},
+          --["fulgoran-rock"] = {},
+          --["fulgoran-dust"] = {},
+          --["fulgoran-sand"] = {},
+          --["fulgoran-dunes"] = {},
+          --["fulgoran-walls"] = {},
+          --["fulgoran-paving"] = {},
           ["fulgoran-conduit"] = {},
           ["fulgoran-machinery"] = {},
         }
@@ -90,11 +89,6 @@ function MapGen_Tchekor()
     {
       settings =
       {
-          -- nauvis decoratives
-          ["v-brown-carpet-grass"] = {},
-          ["v-green-hairy-grass"] = {},
-          ["v-brown-hairy-grass"] = {},
-          ["v-red-pita"] = {},
           -- end of nauvis
           ["vulcanus-rock-decal-large"] = {},
           ["vulcanus-crack-decal-large"] = {},

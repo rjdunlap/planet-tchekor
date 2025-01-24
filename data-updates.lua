@@ -14,3 +14,6 @@ end
 
 data.raw.planet["vulcanus"].hidden = true
 data.raw.planet["vulcanus"].map_gen_settings = nil
+
+data.raw.planet["fulgora"].hidden = true
+data.raw.planet["fulgora"].map_gen_settings = nil
