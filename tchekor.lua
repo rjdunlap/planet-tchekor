@@ -82,22 +82,18 @@ data:extend{
     ingredients = {{type = "item", name = "tchekor-scrap", amount = 1}},
     results =
     {
-      {type = "item", name = "transport-belt",         amount = 1, probability = 0.04, show_details_in_recipe_tooltip = false},
       {type = "item", name = "inserter",               amount = 1, probability = 0.04, show_details_in_recipe_tooltip = false},
-      {type = "item", name = "medium-electric-pole",    amount = 1, probability = 0.04, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "medium-electric-pole",   amount = 1, probability = 0.04, show_details_in_recipe_tooltip = false},
       {type = "item", name = "splitter",               amount = 1, probability = 0.04, show_details_in_recipe_tooltip = false},
-      {type = "item", name = "stone-furnace",                amount = 1, probability = 0.04, show_details_in_recipe_tooltip = false},
-      {type = "item", name = "pipe",                   amount = 1, probability = 0.04, show_details_in_recipe_tooltip = false},
-      {type = "item", name = "underground-belt",       amount = 1, probability = 0.04, show_details_in_recipe_tooltip = false},
-      {type = "item", name = "assembling-machine-1",     amount = 1, probability = 0.04, show_details_in_recipe_tooltip = false},
-      {type = "item", name = "rail",          amount = 1, probability = 0.04, show_details_in_recipe_tooltip = false},
-      {type = "item", name = "tungsten-ore",           amount = 1, probability = 0.10, show_details_in_recipe_tooltip = false},
-      {type = "item", name = "ice",                    amount = 1, probability = 0.10, show_details_in_recipe_tooltip = false},
-      {type = "item", name = "sulfur",                 amount = 1, probability = 0.10, show_details_in_recipe_tooltip = false},
-      {type = "item", name = "concrete",               amount = 1, probability = 0.04, show_details_in_recipe_tooltip = false},
-      {type = "item", name = "calcite",                amount = 1, probability = 0.10, show_details_in_recipe_tooltip = false},
-      {type = "item", name = "coal",                   amount = 1, probability = 0.10, show_details_in_recipe_tooltip = false},
-      {type = "item", name = "holmium-ore",            amount = 1, probability = 0.10, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "assembling-machine-1",   amount = 1, probability = 0.04, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "rail",                   amount = 1, probability = 0.04, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "tungsten-ore",           amount = 1, probability = 0.08, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "ice",                    amount = 1, probability = 0.12, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "sulfur",                 amount = 1, probability = 0.06, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "scrap",                  amount = 1, probability = 0.20, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "calcite",                amount = 1, probability = 0.05, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "coal",                   amount = 1, probability = 0.08, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "holmium-ore",            amount = 1, probability = 0.06, show_details_in_recipe_tooltip = false},
     }
   }
 }

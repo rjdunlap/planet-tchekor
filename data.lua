@@ -416,28 +416,24 @@ tchekor.orbit = {
         type = "space-location",
         name = "star",
     },
-    distance = 12,
-    orientation = 0.26
+    distance = 14,
+    orientation = 0.09
 }
 
 local tchekor_connection = {
     type = "space-connection",
-    name = "nauvis-tchekor",
-    from = "nauvis",
+    name = "vulcanus-tchekor",
+    from = "vulcanus",
     to = "tchekor",
     subgroup = data.raw["space-connection"]["nauvis-vulcanus"].subgroup,
     length = 15000,
     asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_vulcanus),
-  }
-
-PlanetsLib.borrow_music(data.raw["planet"]["vulcanus"], tchekor)
+}
+data:extend{tchekor_connection}
 
 PlanetsLib:extend({tchekor})
 
-
-data:extend{tchekor_connection}
-
-
+PlanetsLib.borrow_music(data.raw["planet"]["fulgora"], tchekor)
 
 data:extend {{
     type = "technology",
