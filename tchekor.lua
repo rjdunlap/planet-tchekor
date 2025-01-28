@@ -4,9 +4,6 @@ local sounds = require("__base__.prototypes.entity.sounds")
 local simulations = require("__space-age__.prototypes.factoriopedia-simulations")
 local item_sounds = require("__base__.prototypes.item_sounds")
 
-data.raw.technology["planet-discovery-vulcanus"].hidden = true
-data.raw.technology["planet-discovery-fulgora"].hidden = true
-
 utils.set_prerequisites("recycling", nil)
 utils.set_prerequisites("tungsten-carbide", nil)
 utils.set_prerequisites("calcite-processing", nil)
