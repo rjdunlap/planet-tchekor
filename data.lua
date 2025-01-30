@@ -438,7 +438,7 @@ PlanetsLib.borrow_music(data.raw["planet"]["fulgora"], tchekor)
 data:extend {{
     type = "technology",
     name = "planet-discovery-tchekor",
-    icons = util.technology_icon_constant_planet("__planet-tchekor__/graphics/planet-tchekor.png"),
+    icons = PlanetsLib.technology_icon_constant_planet("__planet-tchekor__/graphics/planet-tchekor.png", 512),
     icon_size = 512,
     essential = true,
     localised_description = {"space-location-description.tchekor"},
