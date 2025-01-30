@@ -187,6 +187,7 @@ local tchekor =
     starmap_icon = "__planet-tchekor__/graphics/planet-tchekor.png",
     starmap_icon_size = 512,
     magnitude = nauvis.magnitude,
+    subgroup = "planets",
     platform_procession_set =
     {
       arrival = {"planet-to-platform-b"},
