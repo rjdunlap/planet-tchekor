@@ -84,12 +84,12 @@ data:extend{
       {type = "item", name = "splitter",               amount = 1, probability = 0.04, show_details_in_recipe_tooltip = false},
       {type = "item", name = "assembling-machine-1",   amount = 1, probability = 0.04, show_details_in_recipe_tooltip = false},
       {type = "item", name = "rail",                   amount = 1, probability = 0.04, show_details_in_recipe_tooltip = false},
-      {type = "item", name = "tungsten-ore",           amount = 1, probability = 0.08, show_details_in_recipe_tooltip = false},
-      {type = "item", name = "ice",                    amount = 1, probability = 0.12, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "tungsten-ore",           amount = 1, probability = 0.06, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "ice",                    amount = 1, probability = 0.09, show_details_in_recipe_tooltip = false},
       {type = "item", name = "sulfur",                 amount = 1, probability = 0.06, show_details_in_recipe_tooltip = false},
       {type = "item", name = "scrap",                  amount = 1, probability = 0.20, show_details_in_recipe_tooltip = false},
-      {type = "item", name = "calcite",                amount = 1, probability = 0.05, show_details_in_recipe_tooltip = false},
-      {type = "item", name = "coal",                   amount = 1, probability = 0.08, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "calcite",                amount = 1, probability = 0.02, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "coal",                   amount = 1, probability = 0.16, show_details_in_recipe_tooltip = false},
       {type = "item", name = "holmium-ore",            amount = 1, probability = 0.06, show_details_in_recipe_tooltip = false},
     }
   }
