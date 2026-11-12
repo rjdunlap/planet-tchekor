@@ -1,16 +1,10 @@
-local utils = require("__any-planet-start__.utils")
 local resource_autoplace = require("resource-autoplace")
 local sounds = require("__base__.prototypes.entity.sounds")
 local simulations = require("__space-age__.prototypes.factoriopedia-simulations")
 local item_sounds = require("__base__.prototypes.item_sounds")
 
-utils.set_prerequisites("recycling", nil)
-utils.set_prerequisites("tungsten-carbide", nil)
-utils.set_prerequisites("calcite-processing", nil)
 
-utils.set_trigger("tungsten-carbide", {type = "mine-entity", entities = {"big-volcanic-rock"}})
 
-utils.set_prerequisites("foundry", {"tungsten-carbide","concrete", "lubricant"})
 
 local merge = require("lib").merge
 

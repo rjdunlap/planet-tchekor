@@ -476,4 +476,7 @@ data:extend {{
 }}
 
 
-APS.add_planet{name = "tchekor", filename = "__planet-tchekor__/tchekor.lua", technology = "planet-discovery-tchekor"}
+-- Any Planet Start is optional.
+if mods["any-planet-start"] then
+    APS.add_planet{name = "tchekor", filename = "__planet-tchekor__/start.lua", technology = "planet-discovery-tchekor"}
+end

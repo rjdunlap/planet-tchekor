@@ -1,0 +1,16 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.3.0
+Date: 2026-11-12
+  Changes:
+    - Any Planet Start is now an optional dependency. The start-planet choice and the tech tree changes only apply when it is installed and this planet is the chosen start planet.
+  Bugfixes:
+    - Fixed tech tree changes (hiding or re-wiring vanilla technologies) being applied whenever the mod was enabled instead of only when starting on this planet.
+  Balancing:
+    - When starting on Tchekor, oil processing is unlocked by building an offshore pump (Tchekor has oil oceans but no crude oil patches).
+---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 2026-11-12
+  Changes:
+    - Updated for Factorio 2.1.
+  Features:
+    - The "Scrap recycling productivity" research now also applies to this planet's scrap recycling recipe.
