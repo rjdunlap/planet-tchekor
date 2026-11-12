@@ -8,7 +8,7 @@ utils.set_prerequisites("recycling", nil)
 utils.set_prerequisites("tungsten-carbide", nil)
 utils.set_prerequisites("calcite-processing", nil)
 
-utils.set_trigger("tungsten-carbide", {type = "mine-entity", entity = "big-volcanic-rock"})
+utils.set_trigger("tungsten-carbide", {type = "mine-entity", entities = {"big-volcanic-rock"}})
 
 utils.set_prerequisites("foundry", {"tungsten-carbide","concrete", "lubricant"})
 
@@ -60,17 +60,17 @@ data:extend{
     name = "tchekor-scrap-recycling",
     icons = {
       {
-        icon = "__quality__/graphics/icons/recycling.png"
+        icon = "__recycler__/graphics/icons/recycling.png"
       },
       {
         icon = "__space-age__/graphics/icons/scrap.png",
         scale = 0.4
       },
       {
-        icon = "__quality__/graphics/icons/recycling-top.png"
+        icon = "__recycler__/graphics/icons/recycling-top.png"
       }
     },
-    category = "recycling-or-hand-crafting",
+    categories = {"recycling", "hand-crafting"},
     subgroup = "fulgora-processes",
     order = "a[trash]-a[trash-recycling]",
     enabled = false,
@@ -79,19 +79,27 @@ data:extend{
     ingredients = {{type = "item", name = "tchekor-scrap", amount = 1}},
     results =
     {
-      {type = "item", name = "inserter",               amount = 1, probability = 0.04, show_details_in_recipe_tooltip = false},
-      {type = "item", name = "medium-electric-pole",   amount = 1, probability = 0.04, show_details_in_recipe_tooltip = false},
-      {type = "item", name = "splitter",               amount = 1, probability = 0.04, show_details_in_recipe_tooltip = false},
-      {type = "item", name = "assembling-machine-1",   amount = 1, probability = 0.04, show_details_in_recipe_tooltip = false},
-      {type = "item", name = "rail",                   amount = 1, probability = 0.04, show_details_in_recipe_tooltip = false},
-      {type = "item", name = "tungsten-ore",           amount = 1, probability = 0.06, show_details_in_recipe_tooltip = false},
-      {type = "item", name = "ice",                    amount = 1, probability = 0.09, show_details_in_recipe_tooltip = false},
-      {type = "item", name = "sulfur",                 amount = 1, probability = 0.06, show_details_in_recipe_tooltip = false},
-      {type = "item", name = "scrap",                  amount = 1, probability = 0.20, show_details_in_recipe_tooltip = false},
-      {type = "item", name = "calcite",                amount = 1, probability = 0.02, show_details_in_recipe_tooltip = false},
-      {type = "item", name = "coal",                   amount = 1, probability = 0.16, show_details_in_recipe_tooltip = false},
-      {type = "item", name = "holmium-ore",            amount = 1, probability = 0.06, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "inserter",               amount = 1, independent_probability = 0.04, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "medium-electric-pole",   amount = 1, independent_probability = 0.04, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "splitter",               amount = 1, independent_probability = 0.04, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "assembling-machine-1",   amount = 1, independent_probability = 0.04, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "rail",                   amount = 1, independent_probability = 0.04, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "tungsten-ore",           amount = 1, independent_probability = 0.06, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "ice",                    amount = 1, independent_probability = 0.09, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "sulfur",                 amount = 1, independent_probability = 0.06, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "scrap",                  amount = 1, independent_probability = 0.20, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "calcite",                amount = 1, independent_probability = 0.02, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "coal",                   amount = 1, independent_probability = 0.16, show_details_in_recipe_tooltip = false},
+      {type = "item", name = "holmium-ore",            amount = 1, independent_probability = 0.06, show_details_in_recipe_tooltip = false},
     }
   }
 }
 
+-- Let the vanilla "Scrap recycling productivity" research apply to this scrap recipe as well.
+do
+  local tech = data.raw.technology["scrap-recycling-productivity"]
+  if tech and data.raw.recipe["tchekor-scrap-recycling"] then
+    tech.effects = tech.effects or {}
+    table.insert(tech.effects, {type = "change-recipe-productivity", recipe = "tchekor-scrap-recycling", change = 0.1})
+  end
+end

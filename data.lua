@@ -115,7 +115,8 @@ function MapGen_Tchekor()
           ["waves-decal"] = {},
 
         ["fulgoran-ruin-tiny"] = {},
-        ["fulgoran-gravewort"] = {},
+        ["small-fulgoran-gravewort"] = {},
+        ["medium-fulgoran-gravewort"] = {},
         ["urchin-cactus"] = {},
         ["medium-fulgora-rock"] = {},
         ["small-fulgora-rock"] = {},
